@@ -34,7 +34,7 @@
   - name: total_active_customers
     title: 'Total New Customers'
     type: single_value
-    model: salesforce
+    model: stitch_salesforce
     explore: account
     measures: [account.count]
     listen:
@@ -52,7 +52,7 @@
   - name: total_revenue
     title: 'Total Revenue Closed'
     type: single_value
-    model: salesforce
+    model: stitch_salesforce
     explore: opportunity
     measures: [opportunity.total_revenue]
     listen:
@@ -70,7 +70,7 @@
   - name: average_deal_size
     title: 'Average Deal Size'
     type: single_value
-    model: salesforce
+    model: stitch_salesforce
     explore: opportunity
     measures: [opportunity.average_deal_size]
     listen:
@@ -88,7 +88,7 @@
   - name: lead_to_win_funnel
     title: 'Lead to Win Funnel'
     type: looker_column
-    model: salesforce
+    model: stitch_salesforce
     explore: lead
     measures: [lead.count, opportunity.count_new_business, opportunity.count_new_business_won]
     filters:
@@ -127,7 +127,7 @@
   - name: lead_to_win_funnel_table
     title: 'Lead to Win Funnel'
     type: table
-    model: salesforce
+    model: stitch_salesforce
     explore: lead
     dimensions: [lead.created_month]
     measures: [lead.count, opportunity.count_new_business, opportunity.count_new_business_won]
@@ -153,7 +153,7 @@
       lead.count: Leads
       opportunity.count_new_business: Opportunities
       opportunity.count_new_business_won: Won Opportunities
-      __FILE: salesforce/marketing_leadership.sf.dashboard.lookml
+      __FILE: stitch_salesforce/marketing_leadership.sf.dashboard.lookml
       __LINE_NUM: 84
     y_axis_combined: true
     show_y_axis_labels: true
@@ -172,7 +172,7 @@
   - name: rep_roster
     title: 'Rep Roster'
     type: table
-    model: salesforce
+    model: stitch_salesforce
     explore: opportunity
     dimensions: [opportunity_owner.name]
     measures: [opportunity.average_revenue_won, opportunity.average_revenue_lost, opportunity.total_pipeline_revenue,
@@ -212,7 +212,7 @@
   - name: sales_segment_performance
     title: 'Sales Segment Performance'
     type: looker_column
-    model: salesforce
+    model: stitch_salesforce
     explore: opportunity
     dimensions: [account.business_segment]
     measures: [account.count_customers, opportunity.total_revenue]
@@ -249,7 +249,7 @@
   - name: pipeline_forecast_3_months
     title: 'Pipeline Forecast'
     type: looker_column
-    model: salesforce
+    model: stitch_salesforce
     explore: opportunity
     dimensions: [opportunity.probability_group, opportunity.close_month]
     pivots: [opportunity.probability_group]
