@@ -1,6 +1,9 @@
 # preliminaries #
 
-connection: "salesforce_data"
+connection: "salesforce_big_query"
+
+# include all the views
+include: "*.view"
 
 include: "*.view"
 
