@@ -1,5 +1,5 @@
 view: _campaign {
-  sql_table_name: stitch_salesforce.campaign ;;
+  sql_table_name: simonsales_salesforce.campaign ;;
   # dimensions #
 
   dimension: id {

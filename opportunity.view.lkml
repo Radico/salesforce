@@ -1,5 +1,5 @@
 view: _opportunity {
-  sql_table_name: stitch_salesforce.opportunity ;;
+  sql_table_name: simonsales_salesforce.opportunity ;;
   # dimensions #
 
   dimension: id {

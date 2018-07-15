@@ -1,5 +1,5 @@
 view: _account {
-  sql_table_name: stitch_salesforce.account ;;
+  sql_table_name: simonsales_salesforce.account ;;
   # dimensions #
 
   dimension: id {

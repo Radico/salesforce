@@ -1,5 +1,5 @@
 view: _user {
-  sql_table_name: stitch_salesforce.user ;;
+  sql_table_name: simonsales_salesforce.user ;;
 
   dimension: id {
     primary_key: yes
