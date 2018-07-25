@@ -145,6 +145,12 @@ view: _opportunity {
     sql: ${TABLE}.type ;;
   }
 
+  dimension: opportunity_source {
+    type: string
+    sql: ${TABLE}.opportunity_source__c ;;
+  }
+
+
   # measures #
 
   measure: count {
